@@ -1,0 +1,21 @@
+# 0 - rock
+# 1 - paper
+# 2 - scissor
+
+import random
+
+user_choice = int(input("What do you choose? Type 0 for rock, 1 for paper, 2 for scissor"))
+    
+computer_choice = random.randint(0,2)
+if user_choice >= 3 and user_choice < 0:
+    print("You typed a invalid number. You lose!")
+elif user_choice == 0 and computer_choice == 2:
+    print("You win!")
+elif user_choice == 2 and computer_choice ==0:
+    print("You lost!")
+elif user_choice > computer_choice:
+    print("You win!")
+elif computer_choice >user_choice:
+    print("You lost!")
+elif user_choice == computer_choice:
+    print("It's draw!")
